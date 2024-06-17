@@ -1,6 +1,6 @@
 # Importing All the Necessary Libraries
-#pip install selenium 
-#pip install webdriver-manager
+pip install selenium 
+pip install webdriver-manager
 
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
@@ -109,11 +109,18 @@ print(f"Extracted data saved to {file_path}")
 # Extract nested elements using CSS selector
 elems = wd.find_elements(by=By.CSS_SELECTOR, value='p > a')
 
-# # Creating Dictionary of All the Elements If Required 
-# link_dict = {}
-# for elem in elems:
-#     link_dict[elem.text] = elem.get_attribute('href')
-# print(link_dict)
+print("Print all the Element Present in the Page")
+
+ # Creating Dictionary of All the Elements If Required 
+ link_dict = {}
+ for elem in elems:
+     link_dict[elem.text] = elem.get_attribute('href')
+ print(link_dict)
 
 # Closing the browser
 wd.quit()
+
+print("Data is Successfully Extracted ")
+print("Happy Coding ^-^")
+
+

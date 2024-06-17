@@ -27,7 +27,7 @@ This project involves web scraping data from Wikipedia, the fastest growing free
 * Switch the WebDriver instance (`wd`) to this new window.
 * Check if the new window contains the "NSE - Wikipedia" string in the title by using the assertion statement.
 #### 5. Fetch Elements
-* Fetch the link text of the string "National Stock Exchange of India" from this webpage.
+* Fetch the link text of the string `"National Stock Exchange of India"` from this webpage.
 * Click and switch the WebDriver instance to this link.
 * Using the assertion technique, check if the new WebDriver instance contains the string "National Stock Exchange of India - Wikipedia" in the title.
 * Fetch the entire text above the “References” heading from this page, which is defined in multiple `<p>...</p>` tags. Fetch all the elements into an array p_tags using these tag values.
@@ -36,6 +36,17 @@ This project involves web scraping data from Wikipedia, the fastest growing free
 * Fetch all the hyperlinks that occur inside the `<p>...</p>` tags using nested CSS selectors.
 * Create a Python dictionary with hyperlink texts as keys and the URL they point to as values.
 * Print this dictionary on the terminal using the `get_attribute` method to fetch the URLs of the hyperlinks.
+### 6. Saving the Extracted Data to a Text File
+The script saves the extracted data to a text file named `extracted_data.txt` on your desktop. 
+### Dependencies
+* Python 3.x
+* Selenium
+
+### Contributing
+Contributions are welcome! If you would like to contribute to this project, please fork the repository and create a pull request with your changes. Ensure your code adheres to the project's coding standards and includes appropriate tests.
+
+### Contact
+If you have any questions, suggestions, or feedback, feel free to contact me at `deepakkmandal323@gmail.com`.
 ### Conclusion
 This project showcases how to use Selenium to scrape data from a website. It covers various Selenium commands and events to automate the processes on the website and how to clean the text data using regex librarys.
 Stores extracted data in a TEXT file.
